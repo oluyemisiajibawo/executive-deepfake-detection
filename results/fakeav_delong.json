@@ -1,0 +1,12 @@
+{
+  "visual_vs_feature_fusion": {
+    "auc_visual": 1.0,
+    "auc_other": 1.0,
+    "p_value": 1.0
+  },
+  "visual_vs_score_mean": {
+    "auc_visual": 1.0,
+    "auc_other": 0.9798041615667075,
+    "p_value": 0.015888320630913944
+  }
+}

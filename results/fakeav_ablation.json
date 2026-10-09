@@ -1,0 +1,170 @@
+{
+  "results": [
+    {
+      "condition": "visual only (visual label)",
+      "auc": 1.0,
+      "accuracy": 0.993006993006993,
+      "balanced_accuracy": 0.9912280701754386,
+      "fake_detection_rate": 0.9824561403508771,
+      "false_positive_rate": 0.0,
+      "confusion_matrix": [
+        [
+          86,
+          0
+        ],
+        [
+          1,
+          56
+        ]
+      ]
+    },
+    {
+      "condition": "audio only (AUDIO label)",
+      "auc": 0.9884122287968442,
+      "accuracy": 0.9790209790209791,
+      "balanced_accuracy": 0.9775641025641025,
+      "fake_detection_rate": 0.9743589743589743,
+      "false_positive_rate": 0.019230769230769232,
+      "confusion_matrix": [
+        [
+          102,
+          2
+        ],
+        [
+          1,
+          38
+        ]
+      ]
+    },
+    {
+      "condition": "feature-level fusion",
+      "auc": 1.0,
+      "accuracy": 0.993006993006993,
+      "balanced_accuracy": 0.9912280701754386,
+      "fake_detection_rate": 0.9824561403508771,
+      "false_positive_rate": 0.0,
+      "confusion_matrix": [
+        [
+          86,
+          0
+        ],
+        [
+          1,
+          56
+        ]
+      ]
+    },
+    {
+      "condition": "score-level fusion (mean)",
+      "auc": 0.9775601795185638,
+      "accuracy": 0.9020979020979021,
+      "balanced_accuracy": 0.9038147694818441,
+      "fake_detection_rate": 0.9122807017543859,
+      "false_positive_rate": 0.10465116279069768,
+      "confusion_matrix": [
+        [
+          77,
+          9
+        ],
+        [
+          5,
+          52
+        ]
+      ]
+    },
+    {
+      "condition": "confidence-gated fusion (gate=0.5)",
+      "auc": 1.0,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "fake_detection_rate": 1.0,
+      "false_positive_rate": 0.0,
+      "confusion_matrix": [
+        [
+          86,
+          0
+        ],
+        [
+          0,
+          57
+        ]
+      ],
+      "n_gated": 3
+    },
+    {
+      "condition": "confidence-gated fusion (gate=1.0)",
+      "auc": 0.9916360669114647,
+      "accuracy": 0.916083916083916,
+      "balanced_accuracy": 0.921358629130967,
+      "fake_detection_rate": 0.9473684210526315,
+      "false_positive_rate": 0.10465116279069768,
+      "confusion_matrix": [
+        [
+          77,
+          9
+        ],
+        [
+          3,
+          54
+        ]
+      ],
+      "n_gated": 98
+    },
+    {
+      "condition": "confidence-gated fusion (gate=1.5)",
+      "auc": 0.9775601795185638,
+      "accuracy": 0.9020979020979021,
+      "balanced_accuracy": 0.9038147694818441,
+      "fake_detection_rate": 0.9122807017543859,
+      "false_positive_rate": 0.10465116279069768,
+      "confusion_matrix": [
+        [
+          77,
+          9
+        ],
+        [
+          5,
+          52
+        ]
+      ],
+      "n_gated": 143
+    }
+  ],
+  "per_category": [
+    {
+      "category": "FakeVideo-FakeAudio",
+      "n": 28,
+      "visual": 1.1216615379389288,
+      "audio": 1.4355488631323503,
+      "mean_fusion": 1.2786052005356392
+    },
+    {
+      "category": "FakeVideo-RealAudio",
+      "n": 29,
+      "visual": 1.1600429312649947,
+      "audio": -0.5174293740814221,
+      "mean_fusion": 0.3213067785917863
+    },
+    {
+      "category": "RealVideo-FakeAudio",
+      "n": 11,
+      "visual": -0.8098753061188109,
+      "audio": 1.0318752777476854,
+      "mean_fusion": 0.11099998581443722
+    },
+    {
+      "category": "RealVideo-RealAudio",
+      "n": 75,
+      "visual": -0.8013019226655994,
+      "audio": -0.5437301829582498,
+      "mean_fusion": -0.6725160528119247
+    }
+  ],
+  "features": "40 MFCC + 7 spectral contrast + 1 ZCR (48-dim)",
+  "params": {
+    "visual": "{'C': 0.01, 'gamma': 'scale', 'class_weight': None}",
+    "audio": "{'C': 10, 'gamma': 0.01, 'class_weight': 'balanced'}",
+    "fusion": "{'C': 0.01, 'gamma': 'scale', 'class_weight': None}"
+  },
+  "test_clips": 143
+}

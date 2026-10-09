@@ -1,0 +1,33 @@
+{
+  "auc": 0.9618254593064307,
+  "accuracy": 0.9561205048821148,
+  "balanced_accuracy": 0.9225099733641182,
+  "f1_weighted": 0.9561860300421215,
+  "fake_detection_rate": 0.972922769164821,
+  "false_positive_rate": 0.1279028224365845,
+  "confusion_matrix": [
+    [
+      2441,
+      358
+    ],
+    [
+      379,
+      13618
+    ]
+  ],
+  "video_level_auc": 0.9852755102040817,
+  "n_test_frames": 16796,
+  "n_test_videos": 840,
+  "best_params": {
+    "C": 0.1,
+    "gamma": "auto"
+  },
+  "grouped_cv_auc": 0.9996480752101636,
+  "gamma_numeric": 0.00078125,
+  "n_support": [
+    621,
+    694
+  ],
+  "gridsearch_frames": 17273,
+  "calibration": "none; AUC from decision_function"
+}

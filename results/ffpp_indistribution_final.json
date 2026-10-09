@@ -1,0 +1,31 @@
+{
+  "auc": 0.9847832957008626,
+  "video_level_auc": 0.993734693877551,
+  "accuracy": 0.9553465110740652,
+  "balanced_accuracy": 0.9373373097889628,
+  "f1_weighted": 0.956094098528102,
+  "fake_detection_rate": 0.9643495034650282,
+  "false_positive_rate": 0.08967488388710254,
+  "confusion_matrix": [
+    [
+      2548,
+      251
+    ],
+    [
+      499,
+      13498
+    ]
+  ],
+  "selection": "validation partition",
+  "best_params": {
+    "C": "10.0",
+    "gamma": "0.0001",
+    "class_weight": "balanced"
+  },
+  "val_auc": 0.9889015662010945,
+  "gamma_numeric": 0.0001,
+  "n_support": [
+    204,
+    906
+  ]
+}

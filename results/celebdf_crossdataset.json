@@ -1,0 +1,89 @@
+{
+  "zero_shot": {
+    "condition": "zero-shot (FF++ threshold)",
+    "threshold": 0.0,
+    "auc": 0.6588586920570871,
+    "accuracy": 0.65491937819832,
+    "balanced_accuracy": 0.5808721410970911,
+    "fake_detection_rate": 0.8173529411764706,
+    "false_positive_rate": 0.6556086589822885,
+    "confusion_matrix": [
+      [
+        1225,
+        2332
+      ],
+      [
+        1242,
+        5558
+      ]
+    ],
+    "video_level_auc": 0.7420687376074024
+  },
+  "recalibrated": {
+    "calibration_frames": 2220,
+    "calibration_identities": 24,
+    "evaluation_frames": 8137,
+    "default": {
+      "condition": "  default threshold (eval subset)",
+      "threshold": 0.0,
+      "auc": 0.6654698398185014,
+      "accuracy": 0.6523288681332187,
+      "balanced_accuracy": 0.5808056570761541,
+      "fake_detection_rate": 0.8291984732824428,
+      "false_positive_rate": 0.6675871591301347,
+      "confusion_matrix": [
+        [
+          963,
+          1934
+        ],
+        [
+          895,
+          4345
+        ]
+      ]
+    },
+    "youden": {
+      "condition": "  recalibrated (Youden J)",
+      "threshold": 2.083364772373886,
+      "auc": 0.6654698398185014,
+      "accuracy": 0.6165663020769325,
+      "balanced_accuracy": 0.6242686893785885,
+      "fake_detection_rate": 0.5975190839694656,
+      "false_positive_rate": 0.34898170521228855,
+      "confusion_matrix": [
+        [
+          1886,
+          1011
+        ],
+        [
+          2109,
+          3131
+        ]
+      ]
+    },
+    "fpr10": {
+      "condition": "  recalibrated (FPR<=10% budget)",
+      "threshold": 4.256436255995547,
+      "auc": 0.6654698398185014,
+      "accuracy": 0.5025193560280201,
+      "balanced_accuracy": 0.589431123800088,
+      "fake_detection_rate": 0.2875954198473282,
+      "false_positive_rate": 0.10873317224715223,
+      "confusion_matrix": [
+        [
+          2582,
+          315
+        ],
+        [
+          3733,
+          1507
+        ]
+      ]
+    }
+  },
+  "generalisation_gap": {
+    "ffpp_auc": 0.9847832957008626,
+    "celebdf_auc": 0.6588586920570871,
+    "drop_percentage_points": 32.59246036437755
+  }
+}

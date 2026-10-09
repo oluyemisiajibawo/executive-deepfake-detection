@@ -1,0 +1,22 @@
+{
+  "condition": "DeepFakeDetection (unseen manipulation)",
+  "auc": 0.9688521161738949,
+  "video_level_auc": 0.9897723523589574,
+  "accuracy": 0.9091068454728723,
+  "balanced_accuracy": 0.9095179587533129,
+  "fake_detection_rate": 0.9087108013937282,
+  "false_positive_rate": 0.08967488388710254,
+  "confusion_matrix": [
+    [
+      2548,
+      251
+    ],
+    [
+      786,
+      7824
+    ]
+  ],
+  "n_fake_videos": 433,
+  "n_real_videos": 140,
+  "note": "DFD fakes vs the real videos of the FF++ official test partition"
+}

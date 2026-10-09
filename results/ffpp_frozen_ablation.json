@@ -1,0 +1,20 @@
+{
+  "condition": "frozen ImageNet + RBF SVM",
+  "auc": 0.719180267358368,
+  "video_level_auc": 0.7665510204081634,
+  "accuracy": 0.7426172898309121,
+  "balanced_accuracy": 0.6517836351550145,
+  "fake_detection_rate": 0.7880260055726227,
+  "false_positive_rate": 0.4844587352625938,
+  "best_params": {
+    "C": "10",
+    "gamma": "0.0001",
+    "class_weight": "balanced"
+  },
+  "val_auc": 0.6812223821775709,
+  "note": "reduced grid; fitted on 30% of training groups (compute)",
+  "n_support": [
+    3042,
+    13207
+  ]
+}

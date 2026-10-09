@@ -1,0 +1,18 @@
+{
+  "model": "single SVM trained on the full LA training partition",
+  "best_params": "{'C': 1, 'gamma': 0.01, 'class_weight': 'balanced'}",
+  "eer": 0.1655417637690294,
+  "eer_ci95": [
+    0.14700182134736328,
+    0.1840322160416572
+  ],
+  "auc": 0.918558118212984,
+  "auc_ci95": [
+    0.9024070174794303,
+    0.9339603744864228
+  ],
+  "n_support": [
+    297,
+    2097
+  ]
+}
