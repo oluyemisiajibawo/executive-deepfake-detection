@@ -31,9 +31,6 @@ The datasets are not included; their licences do not allow redistribution. Reque
 - FakeAVCeleb v1.2: https://github.com/DASH-Lab/FakeAVCeleb
 - ASVspoof 2019 Logical Access: https://datashare.ed.ac.uk/handle/10283/3336
 
-The notebooks expect the datasets under `deepfake_finetuning/` in Google Drive and write their outputs to `deepfake_finetuning/rebuild_2026/`. Change the paths at the top of each cell to run elsewhere.
-
-## Splits
 
 - `ffpp_train.json`, `ffpp_val.json`, `ffpp_test.json`: the official FaceForensics++ split (720/140/140 source videos).
 - `ffpp_manifest.csv`: every FaceForensics++ video with its partition and source-video group; the DeepFakeDetection subset is marked `dfd_holdout`.
